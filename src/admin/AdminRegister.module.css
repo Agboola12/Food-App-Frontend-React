@@ -1,0 +1,40 @@
+.bg{
+    background: url("../images/13.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    padding: -1em;
+  }
+  
+  #register{
+        color: white;
+  
+  }
+  
+  #card{
+    background: transparent;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.9);
+    border-bottom-right-radius: 5em;
+  }
+  
+  label{
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .form-control{
+    width: 80%;
+    border-radius: 10em;
+  }
+  
+  a:hover{
+    color:#094057;
+    text-decoration: none;
+  }
+  
+  

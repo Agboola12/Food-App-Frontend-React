@@ -1,0 +1,72 @@
+#bg-body{
+    background: url("../images/13.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+    #aa{ 
+        padding-top: 35px;
+        padding-bottom: 10px;
+    }
+
+
+#login{
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 10px;
+
+}
+#card{
+    background: transparent;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.9);
+    /* margin-top: 5em; */
+    border-bottom-right-radius: 5em;
+}
+label{
+    color: white;
+    font-weight: bolder;
+}
+.form-control{
+
+    width: 80%;
+    border-radius: 10em;
+}
+/* .show{
+   background-color: white;
+   width: 10%;
+} */
+
+/* #sign{
+    margin-top: 1em;
+} */
+
+
+a:hover{
+    color:#094057;
+    text-decoration: none;
+}
+.iii{
+    /* border-radius: 300px; */
+    
+    height: 100px;
+    /* -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate; */
+}
+/* @-webkit-keyframes mover{
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+}
+@keyframes mover{
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+} */
+
+#bbb{
+    background-Color: #037B9C;
+}

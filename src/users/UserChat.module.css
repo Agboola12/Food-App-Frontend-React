@@ -1,0 +1,15 @@
+/* @media only screen and (max-width: 768px) {  
+    .SmallDevice {
+        width: 70%;
+    }
+  }
+   */
+.SmallDevice {
+    width: 100%;
+}
+ @media (max-width: 600px){
+    .SmallDevice {
+        width: 75%;
+        border: 1px solid red;
+    }
+ }

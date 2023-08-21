@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),url("./images/12.jpg");
+    /* background: url("../images/12.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    height: 50vh;
+    width: 100%;
+    }
+
+ #input{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 6em;
+ }   
+
+ /* #aa{
+    width: 10em;
+    background-color: red;
+    height: 1px !important;
+ } */
+
+ #img{
+    height: 8em;
+    width: 8em;
+ }
+
+ .card{
+    border-style: none;
+ }
+
+ .about-us{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url("./images/11.jpg");
+    /* background: url("../images/12.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    height: 50vh;
+    width: 100%;
+ }
+
+ .word{
+    font-size: 20px;
+    margin-top: 2em;
+    /* font-weight: normal; */
+ }
+
+ .street-talk{
+   background-color: #FFEBEB;
+ }
+
+ #footer{
+   color: white;
+   /* background-color: #001d47; */
+   height: 500px;
+   width: 100%;
+   color: white;
+   text-decoration: none;
+}
+
+
+#footer .icon ul{ 
+   text-align: right;
+   margin: 0;
+   padding: 0;
+   color: white;
+}
+
+#footer .icon li i{
+     color: white; 
+     font-size: 1em; 
+     border: 3px solid red;
+      border-style: none;
+      border-radius: 60px;
+       background-color: #001d47; 
+}
+
+
+#footer .icon li {
+   display: inline-block;
+   font-size: 20px;
+   padding: 5px;
+   margin-top: 30px;
+   color: white;
+}
+
+#foot{
+   color: white;
+   border-style: none;
+    list-style-type: none;
+   text-decoration: none;
+}
+
+
+
+
+#foot li {
+   list-style-type: none;
+   text-decoration: none;
+   margin: 1em;
+   color: white;
+}
+
+ @media only screen  and (max-width: 677px)   {
+  #footer{
+    height: 100%;
+}
+#foot{
+   font-size: 15px;
+}
+
+}
+
+@media only screen  and (max-width: 1024px) {
+#footer{
+    height: 100%;
+}
+
+#foot{
+   font-size: 15px;
+   color: white;
+}
+}
+
+#last{
+   text-align:  center;
+   color: grey;
+   font-size: 12px;
+}
+

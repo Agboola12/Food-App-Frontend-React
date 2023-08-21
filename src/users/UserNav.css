@@ -1,0 +1,38 @@
+.modal .modal-dialog-aside{
+	width: 400px;
+	max-width:80%; height: 80%;margin-top: 5em; margin-right:0;
+	transform: translate(0); transition: transform .2s;
+}
+
+
+.modal .modal-dialog-aside .modal-content{  height: inherit; border:0; border-radius: 0;}
+.modal .modal-dialog-aside .modal-content .modal-body{ overflow-y: auto }
+.modal.fixed-left .modal-dialog-aside{ margin-left:auto;  transform: translateX(100%); }
+.modal.fixed-right .modal-dialog-aside{ margin-right:auto;  transform: translateX(-100%); }
+
+.modal.show .modal-dialog-aside{ transform: translateX(0);  }
+
+.modal-header{
+    background-image: url('https://ditghBfmlzexmh.cloudfornt.net/ccbp-static-website/chatbg.png');
+}
+
+.sent{
+	background-color: blue;
+	color: white;
+	padding: 10px;
+	text-align: left;
+	border-radius: 10px;
+	width: 50%;
+}
+
+.recieved{
+	background-color:  #323f4b;
+	padding: 10px;
+	width: 50%;
+	color: white;
+	/*text-align: right;*/
+	border-radius: 10px;
+	/* margin: 10px; */
+    float: right;
+	
+}
