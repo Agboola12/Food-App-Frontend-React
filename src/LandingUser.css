@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -16,18 +17,6 @@ header {
     width: 100%;
     }
 
- #input{
-    width: 30%;
-    margin-left: 35%;
-    margin-top: 6em;
- }   
-
- /* #aa{
-    width: 10em;
-    background-color: red;
-    height: 1px !important;
- } */
-
  #img{
     height: 8em;
     width: 8em;
@@ -39,7 +28,6 @@ header {
 
  .about-us{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url("./images/11.jpg");
-    /* background: url("../images/12.jpg"); */
     background-size: cover;
     background-attachment: fixed;
     -moz-background-size: cover;
@@ -50,12 +38,21 @@ header {
     width: 100%;
  }
 
- .word{
-    font-size: 20px;
-    margin-top: 2em;
-    /* font-weight: normal; */
+ #bg-danger{
+   width: 13em;
+   height: 2px;
+   background-color: #FFEBEB;
  }
 
+ /* .word{
+    font-size: 20px;
+    margin-top: 2em;
+    font-weight: normal;
+ } */
+
+ #contact{
+   background-color: #E9ECEF;
+ }
  .street-talk{
    background-color: #FFEBEB;
  }

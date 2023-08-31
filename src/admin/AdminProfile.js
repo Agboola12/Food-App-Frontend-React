@@ -9,7 +9,7 @@ const AdminProfile = () => {
     return (
         <div>
             <AdminNav />
-            <div className="card bg-dark mx-auto mt-4" style={{color: 'white',width:'80%'}}>
+            <div className="card bg-dark mx-auto mt-4" style={{color: 'white',width:'80%', overflowX:'auto'}}>
                 <div className="card-block shadow-lg p-4 m-4" id="print">
                     <h2><center><b>Your Account Information</b></center></h2>  <br />
                     <div className="col-md-12">

@@ -65,6 +65,7 @@ const UserChat = () => {
     position: 'fixed',
     top: 0,
     left: 0,
+  	// bottom:0,
     display: open ? 'flex' : 'none',
     backgroundColor: 'rgba(197, 197, 197, 0.438)',
     zIndex: 30000,
@@ -78,7 +79,7 @@ const UserChat = () => {
         <div class="row w-100"  style={{ position: "relative" }} className={`${Design.SmallDevice} `}>
           <div class="col-lg-5  col-md-12" style={{ background: 'rgb(250, 246, 246)', height: "500px", position: "absolute", right: 0 }}>
             <div class="modal-header">
-              <h5 class="modal-title text-center">Chat with the Manager</h5>
+              <h5 class="modal-title text-center">Feedback</h5>
               <button type="button" class="close" onClick={() => setOpen(false)}>
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -87,13 +88,12 @@ const UserChat = () => {
               minHeight:"54vh",
               maxHeight:"54vh",
               overflowY:"scroll"
-            }}>
-
-
-              
+            }}>              
               {data?.map((text) =>
-                  <div class={`${text.from==user._id?'sent':'recieved'} my-1`}>
-                  <p> {text.message}</p>
+                  <div class={`${text.from==user._id?'recieved':'sent'} m-2 d-flex`}>
+                  <p> {text.message}
+                  <br/>
+                  </p>
                 </div>
                 )}
               
@@ -111,9 +111,9 @@ const UserChat = () => {
         </div>
 
       </div>
-      <div className='' style={{ position: 'absolute', border: "1px solid ", right: 10, bottom: 0, zIndex: 30000 }} >
+      <div className='' style={{ position: 'fixed', right: 10, bottom: 0, zIndex: 30000 }} >
         <button className="btn btn-outline-success" onClick={() => setOpen(!open)}>
-          Chat with us <i className='fa fa-phone '></i>
+          Feedback <i className='fa fa-phone '></i>
         </button>
       </div>
     </>

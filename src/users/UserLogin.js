@@ -10,6 +10,8 @@ const UserLogin = () => {
   const email = useRef();
   const password = useRef();
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false)
+
 
   const [result, setResult] = useState({
     message: "",
@@ -22,10 +24,10 @@ const UserLogin = () => {
       email: email.current.value,
       password: password.current.value
     }
-
+    setIsLoading(true);
     axios.post(baseUrl + "login", data).then
       (res => {
-        
+
         setResult({
           message: res.data.message,
           status: res.data.success
@@ -34,6 +36,7 @@ const UserLogin = () => {
           localStorage.setItem("token", res.data.token);
           navigate("/user-home")
         }
+        setIsLoading(false)
       }).catch(err => {
         console.log(err.message)
       })
@@ -53,7 +56,8 @@ const UserLogin = () => {
             <img className='iii' src={ola} alt="myFace" />
           </center>
 
-          <div className={`alert alert-${result.status ? "success" : "danger"} text-center text-${result.status ? "success" : "danger"} d-${result.message ? "block" : "none"} `}>{result.message}</div>
+          <div className={`alert alert-${result.status ? "success" : "danger"} text-center text-${result.status ?
+           "success" : "danger"} d-${result.message ? "block" : "none"} `}>{result.message}</div>
 
           <div id="login">
             <form method="post" action="" enctype="multipart/form-data">
@@ -72,7 +76,14 @@ const UserLogin = () => {
               </h5>
 
               <div class="form-group">
-                <center><input type="submit" onClick={handleLogin} name="submit" value="Login" id='bbb' className="btn btn-primary" /></center>
+                <center>
+                  {/* <input type="submit" onClick={handleLogin} name="submit" value="Login" id='bbb' className="btn btn-primary" /> */}
+                <button type="submit" disabled={isLoading} name="submit" onClick={handleLogin}  className="btn btn-primary m-3" >
+                      <b>
+                          {isLoading ? "LoggingIn..." : "Login"}
+                      </b>
+                </button>
+                  </center>
               </div>
             </form>
           </div>

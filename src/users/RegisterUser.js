@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import './RegisterUser.css'
+// import './RegisterUser.css'
+import style from './RegisterUser.module.css'
 import ola from '../images/bg.png'
 import axios from 'axios'
 import baseUrl from '../baseUrl'
@@ -159,9 +160,9 @@ const RegisterUser = () => {
 
 
     return (
-        <div id="bg-body">
-            <div className="container">
-                <div className="login-form col-md-6  offset-md-3 card " id='card'>
+        <div id={style.body} >
+            <div className="container" >
+                <div className="login-form col-md-6  offset-md-3 card " id={style.card}>
 
                     <center>
                         <img className='iii' src={ola} alt="myFace" />
@@ -174,7 +175,7 @@ const RegisterUser = () => {
                     <div className={`alert alert-${result.status ? "success" : "danger"} text-center text-${result.status ?
                         "success" : "danger"} d-${result.message ? "block" : "none"} `}>{result.message}</div>
 
-                    <div id="register">
+                    <div id={style.register}>
                         <form method="post" action="" onSubmit={formik.handleSubmit} >
                             <div className="form-group">
                                 <label className='mx-5'>Firstname </label>
@@ -185,7 +186,7 @@ const RegisterUser = () => {
                                         
                                         formik.errors.firstname
                                             ? "form-control my-2 is-invalid"
-                                            : "form-control mx-auto"
+                                            : "form-control my-2"
                                     }
                                     name="firstname"
                                     placeholder="Enter Your Name"
@@ -262,6 +263,7 @@ const RegisterUser = () => {
                                     onChange={(e)=>setImage(e.target.files[0])}
                                     accept='image/*'
                                     name="picture"
+                                    className='form-control my-2'
                                     
                                 />
                             </div>
@@ -284,29 +286,31 @@ const RegisterUser = () => {
                                     <small className="text-danger">{formik.errors.phonenumber}</small>
                                 )}
                             </div>
-                            <div class="form-group">
-                                <label className='mx-5'>Password </label>
-                                <input
-                                    type="password"
-                                    className={
-                                        formik.errors.password
-                                            ? "form-control my-2 is-invalid"
-                                            : "form-control my-2"
-                                    }
-                                    name="password"
-                                    placeholder="Password"
-                                    onChange={formik.handleChange}
-                                    value={formik.values.password}
-                                    onBlur={formik.handleBlur}
-                                    ref={password}
-                                />
-                                {formik.touched.password && (
-                                    <small className="text-danger">
-                                        {formik.errors.password}
-                                    </small>
-                                )}
-                                <div id="toggle" ref={toggle} onClick={showHide}>
+                                <div className='form-group'>
+                                    <label className='mx-5'>Password </label>
+                            <div className="d-flex  ">
+                                    <input
+                                        type="password"
+                                        className={
+                                            formik.errors.password
+                                                ? "form-control my-2 is-invalid"
+                                                : "form-control my-2"
+                                        }
+                                        name="password"
+                                        placeholder="Password"
+                                        onChange={formik.handleChange}
+                                        value={formik.values.password}
+                                        onBlur={formik.handleBlur}
+                                        ref={password}
+                                    />
+                                    {formik.touched.password && (
+                                        <small className="text-danger">
+                                            {formik.errors.password}
+                                        </small>
+                                    )}
+                                <span id="toggle" ref={toggle} onClick={showHide}>
                                     <i ref={i} className="fa fa-eye" aria-hidden="true"></i>
+                                </span>
                                 </div>
                             </div>
                             <h5 className='mx-5'><Link className='text-light' to='/user-login' >Already have an account</Link></h5>

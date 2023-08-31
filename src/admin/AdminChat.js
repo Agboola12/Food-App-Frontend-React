@@ -151,8 +151,7 @@ const AdminChat = () => {
                     <div className="card-header d-flex justify-content-between p-3"
                       style={{ borderBottom: "1px solid rgba(255,255,255,.3)" }}>
                       <p className="fw-bold mb-0 mr-5">{text?.userFirstname}</p>
-                      <p className="text-light small mb-0"><i className="far fa-clock"></i> 12 mins ago
-                      </p>
+                      {/* <p className="text-light small mb-0"><i className="far fa-clock"></i> 12 mins ago</p> */}
                     </div>
                     <div className="card-body">
                       <p className="mb-0">
@@ -170,7 +169,7 @@ const AdminChat = () => {
                     <div className="card-header d-flex  justify-content-between p-3"
                       style={{ borderBottom: '1px solid rgba(255,255,255,.3)' }}>
                       <p className="fw-bold mb-0">Mr Admin</p>
-                      <p className="text-light small mb-0"><i className="far fa-clock"></i> 13 mins ago</p>
+                      {/* <p className="text-light small mb-0"><i className="far fa-clock"></i> 13 mins ago</p> */}
                     </div>
                     <div className="card-body">
                       <p className="mb-0">
@@ -198,7 +197,7 @@ const AdminChat = () => {
                     <textarea className="form-control" id="textAreaExample3" ref={adminMessage} placeholder='type here !!' rows="2"></textarea>
                   </div>
                 </div>
-                <button type="button" onClick={sendMessage} className="btn btn-light btn-lg btn-rounded float-end">Send</button>
+                <button type="button" onClick={sendMessage} className="btn btn-light fs-6 fw-bold btn-rounded float-end">Send</button>
             </div>
 
             </div>

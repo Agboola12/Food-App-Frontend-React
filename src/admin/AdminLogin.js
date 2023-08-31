@@ -63,12 +63,12 @@ const AdminLogin = () => {
             message: res.data.message,
             status: res.data.status
         })
-        setIsLoading(false)
-
+        
         if (res.data.status) {
-          localStorage.setItem("token", res.data.token);
-          navigate("/admin/admin-profile");
+            localStorage.setItem("token", res.data.token);
+            navigate("/admin/admin-profile");
         }
+        setIsLoading(false)
     }).catch(err => {
         console.log(err.message)
       })
@@ -105,7 +105,7 @@ const AdminLogin = () => {
                             "/>
                             </div>
                             <h5 className='mx-5'>
-                <Link className='text-light' to='/admin-register' >Create an account</Link> &nbsp;&nbsp;
+                {/* <Link className='text-light' to='/admin-register' >Create an account</Link> &nbsp;&nbsp; */}
                 <Link className='text-light h5' to='/' style={{ textDecoration: 'none' }} >home</Link>
               </h5>
                             <div class="form-group">

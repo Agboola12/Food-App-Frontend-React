@@ -16,7 +16,7 @@ import UserLogin from './users/UserLogin'
 import UserProfile from './users/UserProfile'
 import UserHome from './users/UserHome'
 import UserLast from './users/UserLast'
-import AdminRegister from './admin/AdminRegister'
+// import AdminRegister from './admin/AdminRegister'
 import AdminGuard from './guard/AdminGuard'
 import UserTransaction from './users/UserTransaction'
 import AdminChat from './admin/AdminChat'
@@ -55,7 +55,7 @@ const Routing = () => {
 
 
             {/* Admin */}
-                <Route path='/admin-register' element={<AdminRegister/>} />
+                {/* <Route path='/admin-register' element={<AdminRegister/>} /> */}
                 <Route path='/admin-login' element={<AdminLogin/>} />
             <Route path='admin' element={<AdminGuard/>}>
                 <Route path='all-users' element={<AllUsers/>} />

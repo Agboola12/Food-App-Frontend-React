@@ -1,0 +1,18 @@
+#picture {
+    height: 89vh;
+    min-width: auto;
+    min-height: auto;
+}
+
+#contain{
+      background-color: #f8f8fd;
+      
+}
+#picture img {
+    margin-top: 5em;
+    border-radius: 20px;
+}
+#profile {
+      margin-top: 5em;
+    background-color: #f8f8fd;
+  }

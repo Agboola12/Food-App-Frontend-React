@@ -1,13 +1,15 @@
-#bg-body{
+#body{
   background: url("../images/13.jpg");
   background-repeat: no-repeat;
+  height: 100vh;
+  /* padding: -1em; */
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
-  height: 100vh;
-  padding: -1em;
+  /* overflow: hidden; */
+  overflow-y: scroll;
 }
 
 #register{
